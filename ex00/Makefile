@@ -3,7 +3,7 @@ FLAGS=-Wall -Wextra -Werror -std=c++98
 NAME=ex00
 
 SRC=main.cpp\
-	Fixed.cpp\
+	ClapTrap.cpp\
 
 OBJ=$(SRC:.cpp=.o)
 
