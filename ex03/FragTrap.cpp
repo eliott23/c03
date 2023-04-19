@@ -35,17 +35,6 @@ FragTrap::FragTrap(std::string name)
     std::cout << "FragTrap constructor called!" << std::endl;
 }
 
-void    FragTrap::attack(std::string target)
-{
-    if (HitPoints && EnergyPoints)
-    {
-        std::cout << "FragTrap " << Name << " attacks "\
-        << target << ", causing " << AttackDamage << \
-        " points of damage" << std::endl;
-        EnergyPoints--;
-    }
-}
-
 FragTrap::~FragTrap()
 {
     std::cout << "FragTrap destructor called!" << std::endl;

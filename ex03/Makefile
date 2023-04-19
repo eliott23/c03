@@ -1,6 +1,6 @@
 FLAGS=-Wall -Wextra -Werror -std=c++98
 
-NAME=ex02
+NAME=ex03
 
 SRC=main.cpp\
 	ClapTrap.cpp\
