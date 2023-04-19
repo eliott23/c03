@@ -14,7 +14,7 @@ ClapTrap& ClapTrap::operator=(ClapTrap& cltrp)
     this->AttackDamage = cltrp.AttackDamage;
     this->HitPoints = cltrp.HitPoints;
     this->EnergyPoints = cltrp.EnergyPoints;
-    std::cout << "Copy constructor called!" << std::endl;
+    std::cout << "Claptrap copy constructor called!" << std::endl;
     return (*this);
 }
 
@@ -24,7 +24,7 @@ void ClapTrap::attack(const std::string& target)
     {
         std::cout << "ClapTrap " << Name << " attacks "\
         << target << ", causing " << AttackDamage << \
-        " points of damage ad=" << EnergyPoints << std::endl;
+        " points of damage" << std::endl;
         EnergyPoints--;
     }
 }
@@ -65,4 +65,12 @@ ClapTrap::ClapTrap(std::string name)
     EnergyPoints = 10;
     AttackDamage = 0;
     std::cout << "Claptrap constructor called!" << std::endl;
+}
+
+ClapTrap::ClapTrap(ClapTrap& cltrp)
+{
+    AttackDamage = cltrp.AttackDamage;
+    HitPoints = cltrp.HitPoints;
+    EnergyPoints = cltrp.AttackDamage;
+    Name = cltrp.Name;
 }
