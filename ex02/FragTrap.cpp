@@ -6,20 +6,12 @@ FragTrap::FragTrap(FragTrap& scvtrp)
     HitPoints = scvtrp.HitPoints;
     EnergyPoints = scvtrp.AttackDamage;
     Name = scvtrp.Name;
-}
-
-FragTrap& FragTrap::operator=(FragTrap& scvtrp)
-{
-    this->Name = scvtrp.Name;
-    this->AttackDamage = scvtrp.AttackDamage;
-    this->HitPoints = scvtrp.HitPoints;
-    this->EnergyPoints = scvtrp.EnergyPoints;
-    std::cout << "FragTrap copy constructor called!" << std::endl; //checklater
-    return (*this);
+    std::cout << "FragTrap copy constructor called" << std::endl;
 }
 
 FragTrap::FragTrap()
 {
+    Name = "FragTrap";
     AttackDamage = 30;
     HitPoints = 100;
     EnergyPoints = 100;
@@ -35,16 +27,6 @@ FragTrap::FragTrap(std::string name)
     std::cout << "FragTrap constructor called!" << std::endl;
 }
 
-void    FragTrap::attack(std::string target)
-{
-    if (HitPoints && EnergyPoints)
-    {
-        std::cout << "FragTrap " << Name << " attacks "\
-        << target << ", causing " << AttackDamage << \
-        " points of damage" << std::endl;
-        EnergyPoints--;
-    }
-}
 
 FragTrap::~FragTrap()
 {

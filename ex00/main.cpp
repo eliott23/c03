@@ -3,11 +3,20 @@
 int main()
 {
     ClapTrap t("3iboud");
-    ClapTrap a("abdelghafor");
-    t.attack("abdelghafour");
+    ClapTrap a("abdelghafour");
     t.attack("abdelghafour");
     a.takeDamage(10);
+    t.attack("abdelghafour");
     a.takeDamage(10);
+    t.beRepaired(9);
+    t.beRepaired(9);
+    t.beRepaired(9);
+    t.beRepaired(9);
+    t.beRepaired(9);
+    t.beRepaired(9);
+    t.beRepaired(9);
+    t.beRepaired(9);
+    t.beRepaired(9);
     t.beRepaired(9);
     a = t;
 }

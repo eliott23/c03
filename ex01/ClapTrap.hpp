@@ -18,4 +18,5 @@ class   ClapTrap {
     ClapTrap(std::string name);
     ~ClapTrap();
 };
+
 #endif
