@@ -11,6 +11,12 @@ DiamondTrap::DiamondTrap()
 
 DiamondTrap::DiamondTrap(std::string n)
 {
-    ClapTrap::Name = n;
-    std::cout << "this is the energ= " << EnergyPoints << std::endl;
+    Name = n;
+    ClapTrap::Name = n + "_clap_name";
+}
+
+void    DiamondTrap::whoAmi()
+{
+    std::cout << "Name = " << Name << "ClapTrap Name = " \
+    << ClapTrap::Name  << std::endl;
 }

@@ -10,7 +10,6 @@ class ScavTrap : virtual public ClapTrap {
     ~ScavTrap();
     ScavTrap(std::string name);
     void    guardGate();
-    ScavTrap& operator=(ScavTrap& scvtrp);
 };
 
 #endif
