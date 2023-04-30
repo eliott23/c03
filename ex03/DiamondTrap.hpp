@@ -9,6 +9,7 @@ class DiamondTrap : public FragTrap, public ScavTrap{
     DiamondTrap();
     DiamondTrap(std::string n);
     void    whoAmi();
+    ~DiamondTrap();
     private :
     std::string Name;
 };

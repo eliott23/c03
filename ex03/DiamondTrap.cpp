@@ -25,3 +25,8 @@ void    DiamondTrap::whoAmi()
     std::cout << "Name = " << Name << "; ClapTrap Name = " \
     << ClapTrap::Name  << std::endl;
 }
+
+DiamondTrap::~DiamondTrap()
+{
+    std::cout << "DiamondTrap destructor called" << std::endl;
+}

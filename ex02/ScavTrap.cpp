@@ -9,16 +9,6 @@ ScavTrap::ScavTrap(ScavTrap& scvtrp)
     std::cout << "ScavTrap Copy Constructor Called" << std::endl;
 }
 
-// ScavTrap& ScavTrap::operator=(ScavTrap& scvtrp)
-// {
-//     this->Name = scvtrp.Name;
-//     this->AttackDamage = scvtrp.AttackDamage;
-//     this->HitPoints = scvtrp.HitPoints;
-//     this->EnergyPoints = scvtrp.EnergyPoints;
-//     std::cout << "ScavTrap copy constructor called!" << std::endl;
-//     return (*this);
-// }
-
 ScavTrap::ScavTrap()
 {
     AttackDamage = 20;

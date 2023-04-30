@@ -8,16 +8,6 @@ FragTrap::FragTrap(FragTrap& scvtrp)
     Name = scvtrp.Name;
 }
 
-FragTrap& FragTrap::operator=(FragTrap& scvtrp)
-{
-    this->Name = scvtrp.Name;
-    this->AttackDamage = scvtrp.AttackDamage;
-    this->HitPoints = scvtrp.HitPoints;
-    this->EnergyPoints = scvtrp.EnergyPoints;
-    std::cout << "FragTrap copy constructor called!" << std::endl; //checklater
-    return (*this);
-}
-
 FragTrap::FragTrap()
 {
     AttackDamage = 30;
